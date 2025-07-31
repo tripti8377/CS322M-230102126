@@ -3,7 +3,6 @@
 **Course:** Digital Logic and Computer Architecture – CS322M  
 **Name:** Tripti Rakesh Kumar  
 **Roll No.:** 230102126
-**Instructor:** Satyajit Das  
 
 ---
 
