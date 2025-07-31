@@ -1,0 +1,125 @@
+$date
+	Thu Jul 31 13:53:45 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_comparator_4bit $end
+$var wire 1 ! equal $end
+$var reg 4 " A [3:0] $end
+$var reg 4 # B [3:0] $end
+$scope module uut $end
+$var wire 4 $ A [3:0] $end
+$var wire 4 % B [3:0] $end
+$var wire 4 & x [3:0] $end
+$var wire 1 ' w23 $end
+$var wire 1 ( w01 $end
+$var wire 1 ! equal $end
+$scope module a01 $end
+$var wire 1 ) A $end
+$var wire 1 * B $end
+$var wire 1 ( Z $end
+$upscope $end
+$scope module a23 $end
+$var wire 1 + A $end
+$var wire 1 , B $end
+$var wire 1 ' Z $end
+$upscope $end
+$scope module final $end
+$var wire 1 ( A $end
+$var wire 1 ' B $end
+$var wire 1 ! Z $end
+$upscope $end
+$scope module x0 $end
+$var wire 1 - A $end
+$var wire 1 . B $end
+$var wire 1 / Z $end
+$upscope $end
+$scope module x1 $end
+$var wire 1 0 A $end
+$var wire 1 1 B $end
+$var wire 1 2 Z $end
+$upscope $end
+$scope module x2 $end
+$var wire 1 3 A $end
+$var wire 1 4 B $end
+$var wire 1 5 Z $end
+$upscope $end
+$scope module x3 $end
+$var wire 1 6 A $end
+$var wire 1 7 B $end
+$var wire 1 8 Z $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+18
+07
+06
+15
+04
+03
+12
+01
+00
+1/
+0.
+0-
+1,
+1+
+1*
+1)
+1(
+1'
+b1111 &
+b0 %
+b0 $
+b0 #
+b0 "
+1!
+$end
+#10000
+11
+17
+10
+16
+b1010 #
+b1010 %
+b1010 "
+b1010 $
+#20000
+0!
+0'
+0+
+b1011 &
+05
+14
+b1110 #
+b1110 %
+#30000
+0(
+0*
+0,
+0)
+02
+08
+b0 &
+0/
+01
+04
+07
+1-
+13
+b0 #
+b0 %
+b1111 "
+b1111 $
+#40000

@@ -1,0 +1,80 @@
+$date
+	Thu Jul 31 13:59:58 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_comparator_1bit $end
+$var wire 1 ! o3 $end
+$var wire 1 " o2 $end
+$var wire 1 # o1 $end
+$var reg 1 $ A $end
+$var reg 1 % B $end
+$scope module uut $end
+$var wire 1 $ A $end
+$var wire 1 % B $end
+$var wire 1 ! o3 $end
+$var wire 1 " o2 $end
+$var wire 1 # o1 $end
+$var wire 1 & notB $end
+$var wire 1 ' notA $end
+$scope module eq $end
+$var wire 1 $ A $end
+$var wire 1 % B $end
+$var wire 1 " Z $end
+$upscope $end
+$scope module gt $end
+$var wire 1 $ A $end
+$var wire 1 # Z $end
+$var wire 1 & B $end
+$upscope $end
+$scope module invA $end
+$var wire 1 $ A $end
+$var wire 1 ' Z $end
+$upscope $end
+$scope module invB $end
+$var wire 1 % A $end
+$var wire 1 & Z $end
+$upscope $end
+$scope module lt $end
+$var wire 1 ' A $end
+$var wire 1 % B $end
+$var wire 1 ! Z $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+1'
+1&
+0%
+0$
+0#
+1"
+0!
+$end
+#10000
+0"
+0&
+1!
+1%
+#20000
+1#
+1&
+0!
+0'
+0%
+1$
+#30000
+1"
+0#
+0&
+1%
+#40000
