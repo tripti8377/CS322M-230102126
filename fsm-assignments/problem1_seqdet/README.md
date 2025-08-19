@@ -46,20 +46,6 @@ vvp sim.out
 gtkwave waves/dump.vcd
 ```
 
-### Verilator
-```bash
-cd problem1_seqdet
-verilator --cc --exe --build tb_seq_detect_mealy.v seq_detect_mealy.v
-./obj_dir/Vtb_seq_detect_mealy
-gtkwave waves/dump.vcd
-```
-
-### ModelSim/Questa
-```tcl
-vlib work
-vlog problem1_seqdet/seq_detect_mealy.v problem1_seqdet/tb_seq_detect_mealy.v
-vsim -c work.tb_seq_detect_mealy -do "run -all; quit"
-```
 
 The testbench already calls `$dumpfile("waves/dump.vcd")` and `$dumpvars`.
 
