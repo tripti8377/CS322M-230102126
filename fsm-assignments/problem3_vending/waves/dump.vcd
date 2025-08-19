@@ -1,0 +1,230 @@
+$date
+	Tue Aug 19 15:49:55 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_vending_mealy $end
+$var wire 1 ! dispense $end
+$var wire 1 " chg5 $end
+$var reg 1 # clk $end
+$var reg 2 $ coin [1:0] $end
+$var reg 1 % rst $end
+$scope module dut $end
+$var wire 1 # clk $end
+$var wire 2 & coin [1:0] $end
+$var wire 1 % rst $end
+$var parameter 2 ' S0 $end
+$var parameter 2 ( S10 $end
+$var parameter 2 ) S15 $end
+$var parameter 2 * S5 $end
+$var reg 1 " chg5 $end
+$var reg 1 ! dispense $end
+$var reg 2 + next_state [1:0] $end
+$var reg 2 , state [1:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1 *
+b11 )
+b10 (
+b0 '
+$end
+#0
+$dumpvars
+bx ,
+bx +
+b0 &
+1%
+b0 $
+0#
+0"
+0!
+$end
+#5000
+b0 +
+b0 ,
+1#
+#10000
+0#
+#12000
+b10 +
+b10 $
+b10 &
+0%
+#15000
+b0 +
+1!
+b10 ,
+1#
+#20000
+0#
+#22000
+0!
+b10 +
+b0 $
+b0 &
+#25000
+1#
+#30000
+0#
+#32000
+b0 +
+1!
+b10 $
+b10 &
+#35000
+b10 +
+0!
+b0 ,
+1#
+#40000
+0#
+#42000
+b0 +
+b0 $
+b0 &
+#45000
+1#
+#50000
+0#
+#52000
+b1 +
+b1 $
+b1 &
+#55000
+b10 +
+b1 ,
+1#
+#60000
+0#
+#62000
+b1 +
+b0 $
+b0 &
+#65000
+1#
+#70000
+0#
+#72000
+b10 +
+b1 $
+b1 &
+#75000
+b11 +
+b10 ,
+1#
+#80000
+0#
+#82000
+b10 +
+b0 $
+b0 &
+#85000
+1#
+#90000
+0#
+#92000
+b0 +
+1!
+b10 $
+b10 &
+#95000
+b10 +
+0!
+b0 ,
+1#
+#100000
+0#
+#102000
+b0 +
+b0 $
+b0 &
+#105000
+1#
+#110000
+0#
+#112000
+b10 +
+b10 $
+b10 &
+#115000
+b0 +
+1!
+b10 ,
+1#
+#120000
+0#
+#122000
+0!
+b10 +
+b0 $
+b0 &
+#125000
+1#
+#130000
+0#
+#132000
+b0 +
+1!
+b10 $
+b10 &
+#135000
+b10 +
+0!
+b0 ,
+1#
+#140000
+0#
+#142000
+b0 +
+b0 $
+b0 &
+#145000
+1#
+#150000
+0#
+#152000
+b1 +
+b1 $
+b1 &
+#155000
+b10 +
+b1 ,
+1#
+#160000
+0#
+#162000
+b1 +
+b0 $
+b0 &
+#165000
+1#
+#170000
+0#
+#175000
+1#
+#180000
+0#
+#185000
+1#
+#190000
+0#
+#195000
+1#
+#200000
+0#
+#205000
+1#
+#210000
+0#
+#215000
+1#
+#220000
+0#
+#222000
