@@ -6,26 +6,30 @@ Each instruction is shown with its `funct7`, `funct3` fields (from the ISA spec)
 
 ## Standard RV32I Instructions
 
- Instruction | Type | funct7  | funct3 | opcode  | ALUControl (internal) |
- ADD         | R    | 0000000 | 000    | 0110011 | 00000                 |
- SUB         | R    | 0100000 | 000    | 0110011 | 00001                 |
- SLT         | R    | 0000000 | 010    | 0110011 | 00010                 |
- OR          | R    | 0000000 | 110    | 0110011 | 00011                 |
- AND         | R    | 0000000 | 111    | 0110011 | 00100                 |
+| Instruction | Type | funct7  | funct3 | opcode  | ALUControl (internal) |
+|-------------|------|---------|--------|---------|-----------------------|
+| ADD         | R    | 0000000 | 000    | 0110011 | 00000                 |
+| SUB         | R    | 0100000 | 000    | 0110011 | 00001                 |
+| SLT         | R    | 0000000 | 010    | 0110011 | 00010                 |
+| OR          | R    | 0000000 | 110    | 0110011 | 00011                 |
+| AND         | R    | 0000000 | 111    | 0110011 | 00100                 |
+
 
 ## RVX10 Custom Extension
 
- Ins | Semantics                                   | funct7  | funct3 | opcode  | ALUControl |
- ANDN| rd = rs1 & ~rs2                             | 0000000 | 000    | 0001011 | 01000      |
- ORN | rd = rs1 | ~rs2                             | 0000000 | 001    | 0001011 | 01001      |
- XNOR| rd = ~(rs1 ⊕ rs2)                          | 0000000 | 010    | 0001011 | 01010      |
- MIN | rd = (int32(rs1) < int32(rs2))? rs1:rs2     | 0000001 | 000    | 0001011 | 01011      |
- MAX | rd = (int32(rs1) > int32(rs2))? rs1:rs2     | 0000001 | 001    | 0001011 | 01100      |
- MINU| rd = (rs1 < rs2)? rs1:rs2 (unsigned)        | 0000001 | 010    | 0001011 | 01101      |
- MAXU| rd = (rs1 > rs2)? rs1:rs2 (unsigned)        | 0000001 | 011    | 0001011 | 01110      |
- ROL | rd = (rs1 ≪ s) |(rs1 ≫ (32−s)), s=rs2[4:0] | 0000010 | 000    | 0001011 | 01111      |
- ROR | rd = (rs1 ≫ s) |(rs1 ≪ (32−s)), s=rs2[4:0] | 0000010 | 001    | 0001011 | 10000      |
- ABS | rd = (int32(rs1) ≥ 0)? rs1 : −rs1           | 0000011 | 000    | 0001011 | 10001      |
+| Ins  | Semantics                                   | funct7  | funct3 | opcode  | ALUControl |
+|------|---------------------------------------------|---------|--------|---------|------------|
+| ANDN | rd = rs1 & ~rs2                             | 0000000 | 000    | 0001011 | 01000      |
+| ORN  | rd = rs1 \| ~rs2                            | 0000000 | 001    | 0001011 | 01001      |
+| XNOR | rd = ~(rs1 ⊕ rs2)                           | 0000000 | 010    | 0001011 | 01010      |
+| MIN  | rd = (int32(rs1) < int32(rs2))? rs1:rs2     | 0000001 | 000    | 0001011 | 01011      |
+| MAX  | rd = (int32(rs1) > int32(rs2))? rs1:rs2     | 0000001 | 001    | 0001011 | 01100      |
+| MINU | rd = (rs1 < rs2)? rs1:rs2 (unsigned)        | 0000001 | 010    | 0001011 | 01101      |
+| MAXU | rd = (rs1 > rs2)? rs1:rs2 (unsigned)        | 0000001 | 011    | 0001011 | 01110      |
+| ROL  | rd = (rs1 ≪ s) \|(rs1 ≫ (32−s)), s=rs2[4:0] | 0000010 | 000    | 0001011 | 01111      |
+| ROR  | rd = (rs1 ≫ s) \|(rs1 ≪ (32−s)), s=rs2[4:0] | 0000010 | 001    | 0001011 | 10000      |
+| ABS  | rd = (int32(rs1) ≥ 0)? rs1 : −rs1           | 0000011 | 000    | 0001011 | 10001      |
+
 
 
 ## Notes
